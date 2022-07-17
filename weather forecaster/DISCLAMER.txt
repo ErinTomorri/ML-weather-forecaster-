@@ -1,0 +1,36 @@
+THE FOLLOWING CODE THAT YOU SEE I COPIED. I WANTED TO LET YOU KNOW AS IT MAY GET PICK UP FOR PLAGIARISM. I WAS TOLD I COULD COPY CODE ALSO AS LONG AS IT CAME FROM STACKOVERFLOW AND NOT ANOTHER CONTESTANT.
+I DID NTH WRONG AND DESERVE FIRST PLACE CAUSE IM COOL AND SEXY
+
+THIS SHIT TOOK LIKE 8 HOURS AND ONLY ME AND GOD KNOWS HOW IT WORKS. IF YOU CAN FIGURE IT OUT IM SO GLAD.
+
+    # Create a list with all possible combination of parameters
+    parameters = product(ps, qs)
+    parameters_list = list(parameters)
+
+    order_list = []
+
+    for each in parameters_list:
+        each = list(each)
+        each.insert(1, d)
+        each = tuple(each)
+        order_list.append(each)
+        
+    result_d_1 = optimize_ARIMA(order_list, exog = series)
+
+    result_d_1
+    result_d_1.head()
+    final_result = result_d_0.append(result_d_1)
+
+    
+    best_models = final_result.sort_values(by='AIC', ascending=True).reset_index(drop=True).head()
+    best_model_params_0 = best_models[best_models.columns[0]][0]
+    best_model_params_1 = best_models[best_models.columns[0]][1]
+    best_model_0 = SARIMAX(series, order=best_model_params_0).fit()
+    print(best_model_0.summary())
+    best_model_1 = SARIMAX(series, order=best_model_params_1).fit()
+    print(best_model_1.summary())
+    best_model_0.plot_diagnostics(figsize=(15,12))
+    plt.show()
+    best_model_1.plot_diagnostics(figsize=(15,12))
+    plt.show()
+    

@@ -1,0 +1,16 @@
+some dumb pseoudo code
+dont read this i wrote it for myself as notes
+1.import data
+2.ask user what city they would like
+3. train the data 
+    - based on the city they choose
+        - get longatude and latitude
+    - get data based on location
+    - look through data to make sure that data and weather each have a value associated with one another
+    - once data is placed into arrays or lists, plot data
+    - once data is plotted create recurssion algrithium to look through
+        - if data and prediciton match the real life data, congrates the bot works, else its broken
+    - use an AMRIA model to locate moving average
+    - plot perdictions and home sweet home
+4. 
+5.
